@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+.header-div {
+  align-items: center;
+  background-color: white;
+  column-gap: 10px;
+  display: flex;
+  float: right;
+  margin-right: 80px;
+  position: absolute;
+  right: 0px;
+}
+
+.logo-div {
+  position: absolute;
+}
+
+.logo-div > a > img {
+  height: 15vw;
+  width: 15vw;
+}
+
+.exampleDemo {
+  display: flex;
+  /* flex-direction: column; */
+  text-align: center;
+}
+
+.installationDiv {
+  background-color: lightgray;
+  margin: auto;
+  max-width: 100vw;
+  width: 300px;
+}
+
+.exampleWrapperDiv {
+  border: 8px solid #000;
+  /* border-image: linear-gradient(45deg, turquoise, greenyellow) 1; */
+  height: fit-content;
+  margin: auto;
+  width: fit-content;
+}
+
+.settingsDiv {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsItem {
+  display: flex;
+  margin-top: 10px;
+  max-width: 90vw;
+  width: 600px;
+}
+
+.settingsItem > label {
+  float: left;
+  height: 30px;
+  width: 70%;
+}
+
+.settingsItem > input {
+  float: right;
+  height: 30px;
+}
+
+.settingsItem > input[type="text"] {
+  width: 65%;
+}
+
+.settingsItem > input[type="checkbox"] {
+  width: 65%;
+}
+
+.settingsItem > input[type="color"] {
+  width: 65%;
+}
+
+.settingsItem > input[type="number"] {
+  width: 25%;
+}
+
+.settingsItem > input[type="range"] {
+  width: 40%;
+}
+
+.currentJsxDiv {
+  margin: auto;
+  margin-top: 50px;
+  max-width: 500px;
+}
+
+.currentJsxDiv span {
+  background-color: lightgrey;
+  float: left;
+  margin-left: 10px;
+  text-align: left;
+  white-space: pre;
+}
+
+.codesandboxDiv {
+  margin-top: 20px;
+}
+
+.apiDiv {
+  margin-bottom: 50px;
+}
+
+.apiTable {
+  width: 90%;
+}
+
+.apiTable,
+.apiTable th,
+.apiTable td {
+  border: 1px solid black;
+  margin: auto;
+  text-align: left;
+}
+
+.obssTriangle {
+  border-color: transparent #1975d2 transparent transparent;
+  border-style: solid;
+  border-width: 0 75px 75px 0;
+  height: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  z-index: 1;
+}
+
+.obssTriangle:hover {
+  border-color: transparent #1565c0 transparent transparent;
+}
+
+.triangleIcon {
+  position: fixed;
+  right: 5px;
+  top: 0;
+  transform: rotate(45deg);
+  writing-mode: vertical-lr;
+}
