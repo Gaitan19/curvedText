@@ -13,8 +13,8 @@ export default function Home() {
       </Head>
       <>
         <div>
-          {/* <CurvedText /> */}
-          <CircleTexts />
+          <CurvedText />
+          {/* <CircleTexts /> */}
         </div>
       </>
     </>

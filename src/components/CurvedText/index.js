@@ -3,22 +3,22 @@ import jsxToString from "jsx-to-string";
 import ReactCurvedText from "react-curved-text";
 
 const CurvedText = () => {
-  const [width, setWidth] = useState(600);
-  const [height, setHeight] = useState(600);
-  const [cx, setCx] = useState(300);
-  const [cy, setCy] = useState(292);
-  const [rx, setRx] = useState(191);
-  const [ry, setRy] = useState(190);
+  const [width, setWidth] = useState(740);
+  const [height, setHeight] = useState(760);
+  const [cx, setCx] = useState(369);
+  const [cy, setCy] = useState(382);
+  const [rx, setRx] = useState(333);
+  const [ry, setRy] = useState(336);
   const [startOffset, setStartOffset] = useState(0);
   const [reversed, setReversed] = useState(true);
   const [text, setText] = useState(
-    "|\u00A0\u00A0\u00A0\u00A0\u00A0 INTERVIEWS AND TEXTING \u00A0\u00A0\u00A0| BACKGROUND CHECK | EMPLOYEE PERKS | EMPLOYEE BENEFITS\u00A0\u00A0"
+    "CAREER MANAGEMENT\u00A0\u00A0 | \u00A0\u00A0RETENTION PROGRAMS\u00A0\u00A0 | \u00A0\u00A0HOLIDAY MANAGEMENT\u00A0\u00A0 | \u00A0\u00A0TIME TRACKING\u00A0\u00A0 | \u00A0\u00A0MODERN HARDWARE\u00A0\u00A0 | \u00A0\u00A0PRODUCTIVITY TOOLS\u00A0\u00A0 | \u00A0\u00A0COMMUNICATION TOOLS\u00A0\u00A0 |"
   );
   const [fontSize, setFontSize] = useState(24);
   const [textPathFill, setTextPathFill] = useState();
-  const [dy, setDy] = useState(0);
+  const [dy, setDy] = useState(-6);
   const [fill, setFill] = useState();
-  const [rotate, setRotate] = useState(0);
+  const [rotate, setRotate] = useState(30);
 
   const textProps = fontSize ? { style: { fontSize: fontSize } } : null;
   const textPathProps = textPathFill ? { fill: textPathFill } : null;
@@ -39,12 +39,10 @@ const CurvedText = () => {
       startOffset={startOffset}
       reversed={reversed}
       text={text}
-      //   textProps={textProps}
       textProps={{
         style: { fontSize: 24, fontFamily: "open-sans" },
-        fontWeight: 800,
+        fontWeight: 500,
       }}
-      //   {{ style: { fontSize: 24 } }}
       textPathProps={textPathProps}
       tspanProps={tspanProps}
       ellipseProps={ellipseProps}
