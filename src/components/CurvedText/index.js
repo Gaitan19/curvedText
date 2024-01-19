@@ -3,30 +3,30 @@ import jsxToString from "jsx-to-string";
 import ReactCurvedText from "react-curved-text";
 
 const CurvedText = () => {
-  const [width, setWidth] = useState(740);
-  const [height, setHeight] = useState(760);
-  const [cx, setCx] = useState(369);
-  const [cy, setCy] = useState(382);
-  const [rx, setRx] = useState(333);
-  const [ry, setRy] = useState(336);
+  const [width, setWidth] = useState(371);
+  const [height, setHeight] = useState(355);
+  const [cx, setCx] = useState(189);
+  const [cy, setCy] = useState(176);
+  const [rx, setRx] = useState(152);
+  const [ry, setRy] = useState(152);
   const [startOffset, setStartOffset] = useState(0);
   const [reversed, setReversed] = useState(true);
   const [text, setText] = useState(
-    "CAREER MANAGEMENT\u00A0\u00A0 | \u00A0\u00A0RETENTION PROGRAMS\u00A0\u00A0 | \u00A0\u00A0HOLIDAY MANAGEMENT\u00A0\u00A0 | \u00A0\u00A0TIME TRACKING\u00A0\u00A0 | \u00A0\u00A0MODERN HARDWARE\u00A0\u00A0 | \u00A0\u00A0PRODUCTIVITY TOOLS\u00A0\u00A0 | \u00A0\u00A0COMMUNICATION TOOLS\u00A0\u00A0 |"
+    "|\u00A0\u00A0\u00A0INTERVIEWS AND TEXTING\u00A0\u00A0\u00A0|\u00A0\u00A0\u00A0BACKGROUND CHECK\u00A0\u00A0\u00A0 | \u00A0\u00A0\u00A0EMPLOYEE PERKS\u00A0\u00A0\u00A0 | \u00A0\u00A0\u00A0EMPLOYEE BENEFITS\u00A0\u00A0\u00A0"
   );
   const [fontSize, setFontSize] = useState(24);
   const [textPathFill, setTextPathFill] = useState();
   const [dy, setDy] = useState(-6);
   const [fill, setFill] = useState();
-  const [rotate, setRotate] = useState(30);
+  const [rotate, setRotate] = useState(0);
 
   const textProps = fontSize ? { style: { fontSize: fontSize } } : null;
   const textPathProps = textPathFill ? { fill: textPathFill } : null;
   const tspanProps = dy ? { dy: dy } : null;
   const ellipseProps = fill ? { style: `fill: ${fill}` } : null;
   const svgProps = rotate
-    ? { style: { transform: `rotate(${rotate}deg)` } }
-    : null;
+    ? { style: { transform: `rotate(${rotate}deg)`, border: "2px solid" } }
+    : { style: { border: "2px solid" } };
 
   const currentJsx = (
     <ReactCurvedText
@@ -40,8 +40,8 @@ const CurvedText = () => {
       reversed={reversed}
       text={text}
       textProps={{
-        style: { fontSize: 24, fontFamily: "open-sans" },
-        fontWeight: 500,
+        style: { fontSize: 18, fontFamily: "open-sans, sans-serif" },
+        fontWeight: 600,
       }}
       textPathProps={textPathProps}
       tspanProps={tspanProps}
