@@ -3,12 +3,12 @@ import jsxToString from "jsx-to-string";
 import ReactCurvedText from "react-curved-text";
 
 const CurvedText = () => {
-  const [width, setWidth] = useState(371);
-  const [height, setHeight] = useState(355);
-  const [cx, setCx] = useState(189);
-  const [cy, setCy] = useState(176);
-  const [rx, setRx] = useState(152);
-  const [ry, setRy] = useState(152);
+  const [width, setWidth] = useState(597);
+  const [height, setHeight] = useState(597);
+  const [cx, setCx] = useState(298);
+  const [cy, setCy] = useState(298);
+  const [rx, setRx] = useState(275);
+  const [ry, setRy] = useState(275);
   const [startOffset, setStartOffset] = useState(0);
   const [reversed, setReversed] = useState(true);
   const [text, setText] = useState(
@@ -16,7 +16,7 @@ const CurvedText = () => {
   );
   const [fontSize, setFontSize] = useState(24);
   const [textPathFill, setTextPathFill] = useState();
-  const [dy, setDy] = useState(-6);
+  const [dy, setDy] = useState(10);
   const [fill, setFill] = useState();
   const [rotate, setRotate] = useState(0);
 
@@ -40,7 +40,7 @@ const CurvedText = () => {
       reversed={reversed}
       text={text}
       textProps={{
-        style: { fontSize: 18, fontFamily: "open-sans, sans-serif" },
+        style: { fontSize: 17, fontFamily: "open-sans, sans-serif" },
         fontWeight: 600,
       }}
       textPathProps={textPathProps}
